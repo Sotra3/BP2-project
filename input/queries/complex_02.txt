@@ -1,0 +1,1 @@
+SELECT Student.ime, Predmet.naziv, Ispit.ocena FROM Student, Ispit, Predmet, Stipendija WHERE Student.indeks = Ispit.studentIndeks AND Ispit.predmetId = Predmet.predmetId AND Student.indeks = Stipendija.studentIndeks AND Ispit.ocena >= 9 ORDER BY Student.ime;
